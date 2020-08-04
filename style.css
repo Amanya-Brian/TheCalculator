@@ -1,0 +1,55 @@
+body{
+    background-color: dodgerblue;
+    font-family: sans-serif;
+}
+h1{
+    text-align: center;
+    color: floralwhite;
+    font-size: 40px;
+}
+#calculator{
+    width: 320px;
+    height: 520px;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px dodgerblue;
+    text-align: center;
+}
+#container{
+    background-image: url("bgimage.jpg");
+    width: 1000px;
+    height: 650px;
+    margin: 20px auto;
+}
+#content{
+    margin: 10px;
+    text-align: right;
+    font-size: large;
+    padding-top: 10px;
+    color: gray;
+    height: 40px;
+}
+#result{
+    margin: 8px;
+    text-align-last: right;
+    font-size: xx-large;
+    height: 80px;
+}
+button{
+    float: left;
+    font-size: 30px;
+    margin : 5px;
+    border-radius: 50%;
+    border: 0px;
+}
+#keypad{
+    height: 350px;
+    display: inline-block;
+    padding-left: 20px;
+
+}
+.operators, .number, .blank{
+    height:60px;
+    width: 60px;
+}
