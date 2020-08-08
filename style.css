@@ -42,7 +42,14 @@ button{
     margin : 5px;
     border-radius: 50%;
     border: 0px;
+    outline: none;
+    position: relative;
 }
+.number:active {
+    background-color: white;
+    transform: translateY(4px);
+    font-size: 20px;
+  }
 #keypad{
     height: 350px;
     display: inline-block;
@@ -53,3 +60,14 @@ button{
     height:60px;
     width: 60px;
 }
+.blank{
+    background-color: white;
+}
+.operators{
+    background-color: dodgerblue;
+}
+.operators:active {
+    background-color: dodgerblue;
+    transform: translateY(4px);
+    font-size: 20px;
+  }
