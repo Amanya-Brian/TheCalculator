@@ -46,7 +46,7 @@ button{
     position: relative;
 }
 .number:active {
-    background-color: white;
+    background-color: dodgerblue;
     transform: translateY(4px);
     font-size: 20px;
   }

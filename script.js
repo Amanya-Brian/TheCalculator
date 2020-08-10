@@ -16,6 +16,9 @@ function returnResult(num){
     }
 }
 function getFormattedValue(num){
+    if(num == "-"){
+        return "";
+    }
     var n = Number(num);
     var value = n.toLocaleString("en");
     return value;
@@ -38,7 +41,7 @@ for(var i = 0; i < operator.length; i++){
                 output = output.substr(0,output.length-1);
                 returnResult(output);
             }
-        }
+        } 
         else{
             var output = getResult();
             var content = getContent();
