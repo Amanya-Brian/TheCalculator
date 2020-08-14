@@ -47,16 +47,16 @@ for(var i = 0; i < operator.length; i++){
             var content = getContent();
             if(output != ""){
                 output = reverseFormattedValue(output);
-                output +=  this.innerText;
                 content += output;
-                returnContent(content);
-                returnResult("");
                 if(this.id == "equals"){
-                    alert("You pressed equals");
-                    var c = newFunction(content);
-                    var output = eval(c);
+                    var output = eval(content);
                     returnResult(output);
                     returnContent("");
+                }
+                else{
+                    content += this.innerText;
+                    returnContent(content);
+                    returnResult("");
                 }
             }
         }
@@ -73,8 +73,4 @@ for(var j = 0; j < number.length; j++){
             returnResult(output);
         }
     })
-}
-
-function newFunction(content) {
-    return content.toString();
 }
