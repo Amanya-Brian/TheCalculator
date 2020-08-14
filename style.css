@@ -44,6 +44,7 @@ button{
     border: 0px;
     outline: none;
     position: relative;
+    cursor: pointer;
 }
 .number:active {
     background-color: dodgerblue;
@@ -70,4 +71,14 @@ button{
     background-color: dodgerblue;
     transform: translateY(4px);
     font-size: 20px;
-  }
+}
+.operator{
+    height:60px;
+    width: 60px;
+    background-color: dodgerblue;
+}
+.operator:active {
+    background-color: dodgerblue;
+    transform: translateY(4px);
+    font-size: 20px;
+}

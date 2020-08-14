@@ -52,7 +52,9 @@ for(var i = 0; i < operator.length; i++){
                 returnContent(content);
                 returnResult("");
                 if(this.id == "equals"){
-                    var output = eval(content);
+                    alert("You pressed equals");
+                    var c = newFunction(content);
+                    var output = eval(c);
                     returnResult(output);
                     returnContent("");
                 }
@@ -71,4 +73,8 @@ for(var j = 0; j < number.length; j++){
             returnResult(output);
         }
     })
+}
+
+function newFunction(content) {
+    return content.toString();
 }
